@@ -106,7 +106,14 @@ button:hover {
   color: #d1d5db;
   border: 1px solid #374151;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.card-preco{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d1d5db94;
+  padding: 12px;
 }
 
 footer {
