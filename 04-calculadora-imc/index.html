@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Calculadora de IMC</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="app.js" defer></script>
 </head>
 
 <body>
@@ -25,14 +26,14 @@
       <input type="text" placeholder="Seu nome" />
 
       <label>Altura (em metros)</label>
-      <input type="number" placeholder="Ex: 1.70" step="0.01" />
+      <input type="number" placeholder="Ex: 1.70" step="0.01" id="altura"/>
 
       <label>Peso (em kg)</label>
-      <input type="number" placeholder="Ex: 70" />
+      <input type="number" placeholder="Ex: 70" id="peso"/>
 
-      <button onclick="calcularIMC()">Calcular IMC</button>
+      <button onclick="hadleClick()">Calcular IMC</button>
 
-      <div class="resultado">
+      <div class="resultado" id="resultado">
         O resultado aparecerá aqui
       </div>
 

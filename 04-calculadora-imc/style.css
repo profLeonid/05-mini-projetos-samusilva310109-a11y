@@ -111,6 +111,38 @@ button:hover {
   justify-content: center;
 }
 
+.format1, .format2, .format3, .format4, .format5, .format6{
+  border: 1px solid;
+}
+
+.format1{
+  border-color: #1e3a5f;
+  box-shadow: 0 0 16px #1e3a5f;
+}
+
+.format2{
+  border-color: #14532d;
+  box-shadow: 0 0 16px #14532d;
+}
+
+.format3{
+  border-color: #713f12;
+  box-shadow: 0 0 16px #713f12;
+}
+.format4{
+  border-color: #7f1d1d;
+  box-shadow: 0 0 16px #7f1d1d;
+}
+.format5{
+  border-color: #6b0f0f;
+  box-shadow: 0 0 16px #6b0f0f;
+}
+
+.format6{
+  border-color: #450a0a;
+  box-shadow: 0 0 16px #450a0a;
+}
+
 footer {
   display: flex;
   align-items: flex-end;
