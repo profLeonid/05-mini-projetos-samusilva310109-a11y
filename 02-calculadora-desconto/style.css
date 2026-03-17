@@ -109,6 +109,20 @@ button:hover {
   justify-content: space-evenly;
 }
 
+.desconto1{
+  border:1px solid #14532d ;
+  box-shadow: 0 0 16px #14532d;
+}
+.desconto2{
+  border:1px solid #713f12 ;
+  box-shadow: 0 0 16px #713f12;
+}
+
+.desconto3{
+  border:1px solid #7f1d1d ;
+  box-shadow: 0 0 16px #7f1d1d;
+}
+
 .card-preco{
   display: flex;
   flex-direction: column;

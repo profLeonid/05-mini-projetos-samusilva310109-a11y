@@ -1,4 +1,4 @@
-function calcular(preco, desconto){
+function calcularPrecoFinal(preco, desconto){
     let precoFinal = preco - (preco * (desconto / 100))
     return precoFinal
 }
@@ -8,25 +8,39 @@ function formatarMoeda(num){
     let moedaFormatada = formatarMoeda.format(num)
     return moedaFormatada
 }
+
+const formatCondicional = (desconto) => {
+    if(desconto <= 5){
+        return 'desconto1' 
+    }else  if(desconto <= 10){
+        return 'desconto2'
+    }else{
+        return 'desconto3'
+    }
+}
+
+const removerCondicionalFormat = () => {
+    document.getElementById('result').classList.remove('desconto1', 'desconto2', 'desconto3')
+}
 function calcularDesconto(){
-    const preco = document.getElementById('preco-original')
-    const desconto = document.getElementById('desconto')
+    const preco = Number(document.getElementById('preco-original').value)
+    const desconto = Number(document.getElementById('desconto').value)
     const result = document.getElementById('result')
 
-    if(desconto < 5){
-        result.classList.add()
-    }else  if(desconto){
-
-    }
-
-    let precoFinal = calcular(preco.value, desconto.value)
-    let economia = formatarMoeda(preco.value - precoFinal)
+    
+    let precoFinal = calcularPrecoFinal(preco, desconto)
+    let economia = formatarMoeda(preco - precoFinal)
 
     let precoFinalMoeda = formatarMoeda(precoFinal)
 
     console.log(precoFinal)
     console.log(economia);
     
+    removerCondicionalFormat()
+
+    let formatoCondicional = formatCondicional(desconto)
+    result.classList.add(formatoCondicional)
+
     
     let resultados = [{nome: "Preço Final", value: precoFinalMoeda}, {nome: "Valor Economizado", value: economia}]
 
