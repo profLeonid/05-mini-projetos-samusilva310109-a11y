@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Calculadora de Média</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="app.js" defer></script>
 </head>
 
 <body>
@@ -22,17 +23,17 @@
       <p class="descricao">Digite as três notas para calcular a situação do aluno.</p>
 
       <label>Nota 1</label>
-      <input type="number" placeholder="0 a 10" />
+      <input type="number" placeholder="0 a 10" id="nota1"/>
 
       <label>Nota 2</label>
-      <input type="number" placeholder="0 a 10" />
+      <input type="number" placeholder="0 a 10" id="nota2"/>
 
       <label>Nota 3</label>
-      <input type="number" placeholder="0 a 10" />
+      <input type="number" placeholder="0 a 10" id="nota3"/>
 
-      <button onclick="calcularMedia()">Calcular Média</button>
+      <button onclick="handleClick()">Calcular Média</button>
 
-      <div class="resultado">
+      <div class="resultado" id="resultado">
         O resultado aparecerá aqui
       </div>
 
